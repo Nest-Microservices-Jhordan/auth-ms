@@ -18,6 +18,8 @@ async function bootstrap() {
     },
   );
 
+  console.log('Triggering workflow');
+
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
